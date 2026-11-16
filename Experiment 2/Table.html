@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Time Table
+    </title>
+    <style>
+        table{border:1px solid black;
+            border-collapse: collapse;
+            text-align:center;
+            width:50%;
+        }
+        th,td{border:1px solid black;
+        padding:10px;}
+        th{color:#c0c4f4;
+        background-color:#b74a22}
+        td{color:brown;}
+
+        tfoot td{background-color: #6fd8a2; color:#000000;font-weight:bold;}
+        thead td{background-color: #096424;
+        color:aliceblue;font-weight:bold;}
+        .lab{background-color: #c3a8d2;}
+        .elec1{background-color: #f08dd4;}
+        .elec2{background-color: #879e59;color:white;}
+        tr:nth-child(odd){background-color: #e7ce7b;}
+        tr:nth-child(even){background-color: #8adde7;}
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="font-family:Arial;font-weight:bold;color:red;"><h2>Class Time Table</h2></caption>
+        
+        <thead><tr><td colspan="9">Time Table</td></tr></thead>
+        <br>
+        <tr>
+            <th>DAY</th>
+            <th>8:45-9:45</th>
+            <th>9:45-10:45</th>
+            <th>10:45-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-1:00</th>
+            <th>1:00-1:45</th>
+            <th>1:45-2:45</th>
+            <th>2:45-3:45</th>
+        </tr>
+        <tr>
+                <td>MON</td>
+                <td>SEPM</td>
+                <td>ENG</td>
+                <td rowspan="6">BREAK</td>
+                <td class="elec1">PEC1</td>
+                <td>TOC</td>
+                <td rowspan="6">LUNCH BREAK</td>
+                <td class="lab" colspan="2">Web Lab</td>
+        </tr>
+        <tr>
+                <td>TUE</td>
+                <td class="elec1">PEC1</td>
+                <td class="elec2">PEC2</td>
+                <td>APTITUDE</td>
+                <td>TOC</td>
+                <td>EVS</td>
+                <td>REMEDIAL CLASS</td>
+        </tr>
+        <tr>
+                <td>WED</td>
+                <td>SEPM</td>
+                <td>TOC</td>
+                <td>CN</td>
+                <td class="elec1">PEC1</td>
+                <td class="lab" colspan="2">CN Lab</td>
+        </tr>
+        <tr>
+                <td>THU</td>
+                <td class="elec2">PEC2</td>
+                <td>CN</td>
+                <td class="lab" colspan="2">PEC2 Lab</td>
+                <td colspan="2">IIILP</td>
+        </tr>
+        <tr>
+                <td>FRI</td>
+                <td>CN</td>
+                <td>SEPM</td>
+                <td class="elec1">PEC1</td>
+                <td class="elec2">PEC2</td>
+                <td>TOC</td>
+                <td>MENTORING</td>
+        </tr>
+        <tr>
+                <td>SAT</td>
+                <td>TOC/SEPM</td>
+                <td>CN</td>
+                <td class="elec1">PEC1</td>
+                <td class="elec2">PEC2</td>
+                <td colspan="2">NSS/YOGA/PE</td>
+        </tr>
+        <tfoot><td colspan="9">End of Timetable</td></tfoot>
+    </table>
+</body>
+</html>
